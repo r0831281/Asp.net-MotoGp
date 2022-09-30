@@ -1,13 +1,25 @@
 ﻿@model IEnumerable<MotoGP.Models.Race>
+@using System.Globalization;
 @{
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    CultureInfo ci = new CultureInfo("en-US");
     ViewData["Title"] = "Races";
 }
 
-@foreach (var item in Model)
+@{
+    var Maand = 0;
+
+    @foreach (var item in Model)
 {
-    <p>@item.Date.ToString("MMMM")</p>
-    <p>@(Html.DisplayFor(modelItem => item.Date)) <a asp-controller="Info" asp-action="ShowRace" asp-route-id="@(Html.DisplayFor(modelItem => item.RaceID))">@(Html.DisplayFor(modelItem => item.Name))</a></p>
+    
+    if(Maand != item.Date.Month)
+    {
+    <h2>@item.Date.ToString("MMMM")</h2>
+        Maand = item.Date.Month;
+
+    }
+    
+    <p>@(Html.DisplayFor(modelItem => item.Date)) <a asp-controller="Info" asp-action="ShowRace" asp-route-id="@item.RaceID">@(Html.DisplayFor(modelItem => item.Name))</a></p>
+}
 }
 
 <p><a asp-controller="Home" asp-action="Menu">Back</a> | <a asp-controller="Info" asp-action="BuildMap">Races on map</a> | <a asp-controller="Info" asp-action="SelectRace">One by one</a></p>

@@ -29,5 +29,14 @@ namespace MotoGP.Controllers
             ViewData["BannerNr"] = 0;
             return View(races.ToList());
         }
+
+        public IActionResult ShowRace(int id)
+        {
+            var race = _context.Races.SingleOrDefault(r => r.RaceID == id);
+            int BannerNr = 0;
+            ViewData["BannerNr"] = BannerNr;
+            return View(race);
+
+        }
     }
 }
