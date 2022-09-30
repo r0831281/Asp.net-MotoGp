@@ -2454,19 +2454,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\gebruiker\\.nuget\\packages\\": {}
+    "C:\\Users\\jonas\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gebruiker\\Documents\\2022-2023 School\\DOTNET\\www\\MotoGP\\Moto\\MotoGP\\MotoGP.csproj",
+      "projectUniqueName": "C:\\Users\\jonas\\Source\\Repos\\Moto\\MotoGP\\MotoGP.csproj",
       "projectName": "MotoGP",
-      "projectPath": "C:\\Users\\gebruiker\\Documents\\2022-2023 School\\DOTNET\\www\\MotoGP\\Moto\\MotoGP\\MotoGP.csproj",
-      "packagesPath": "C:\\Users\\gebruiker\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gebruiker\\Documents\\2022-2023 School\\DOTNET\\www\\MotoGP\\Moto\\MotoGP\\obj\\",
+      "projectPath": "C:\\Users\\jonas\\Source\\Repos\\Moto\\MotoGP\\MotoGP.csproj",
+      "packagesPath": "C:\\Users\\jonas\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jonas\\Source\\Repos\\Moto\\MotoGP\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\gebruiker\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jonas\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
