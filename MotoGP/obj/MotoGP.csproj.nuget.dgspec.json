@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jonas\\Source\\Repos\\Moto\\MotoGP\\MotoGP.csproj": {}
+    "D:\\files\\school\\DotNet\\www\\Moto\\MotoGP\\MotoGP.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jonas\\Source\\Repos\\Moto\\MotoGP\\MotoGP.csproj": {
+    "D:\\files\\school\\DotNet\\www\\Moto\\MotoGP\\MotoGP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jonas\\Source\\Repos\\Moto\\MotoGP\\MotoGP.csproj",
+        "projectUniqueName": "D:\\files\\school\\DotNet\\www\\Moto\\MotoGP\\MotoGP.csproj",
         "projectName": "MotoGP",
-        "projectPath": "C:\\Users\\jonas\\Source\\Repos\\Moto\\MotoGP\\MotoGP.csproj",
+        "projectPath": "D:\\files\\school\\DotNet\\www\\Moto\\MotoGP\\MotoGP.csproj",
         "packagesPath": "C:\\Users\\jonas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jonas\\Source\\Repos\\Moto\\MotoGP\\obj\\",
+        "outputPath": "D:\\files\\school\\DotNet\\www\\Moto\\MotoGP\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jonas\\AppData\\Roaming\\NuGet\\NuGet.Config",

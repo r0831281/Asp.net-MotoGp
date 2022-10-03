@@ -10,7 +10,7 @@
         public int RaceID { get; set; }
         public int Number { get; set; }
         public DateTime OrderDate { get; set; }
-        public bool Paid { get; set; }
+        public bool? Paid { get; set; }
         public Race? Race { get; set; }
         public Country? Country { get; set; }
 

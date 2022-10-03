@@ -1,7 +1,49 @@
-﻿@{
+﻿@model MotoGP.Models.ViewModels.ShopViewModel
+@{
     Layout = "~/Views/Shared/_Layout.cshtml";
     ViewData["Title"] = "Order Tickets";
 }
 
 <p>Please fill out following fields:</p>
+
+<form asp-action="OrderTicket">
+
+    <label asp-for="Ticket.Name"></label>
+    <input asp-for="Ticket.Name" />
+    <br />
+    <br />
+    <label asp-for="Ticket.Email"></label>
+    <input asp-for="Ticket.Email" />
+    <br />
+    <br />
+    <label asp-for="Ticket.Address"></label>
+    <input asp-for="Ticket.Address" />
+    <br />
+    <br />
+    
+    <select asp-for="Ticket.CountryID" asp-items="Model.Countries">
+        <option value="0">-- Select a country --</option>
+    </select>
+    <br />
+ 
+    @{
+        int i = 1;
+        while(i < 7)
+        {
+            <label asp-for="Ticket.Number">@i</label>
+            <input type="radio" value="@i" asp-for="Ticket.Number" />
+            i += 1;
+        }
+    }
+    <br />
+    @foreach(var item in Model.Races)
+    {
+        <input type="radio" value="@item.RaceID" asp-for="Ticket.RaceID" />
+        <label asp-for="Ticket.RaceID">@item.Country - @item.Name</label>
+        
+        <br />
+        
+    }
+    <input type="submit" value="OrderTicket" />
+</form>
 <a asp-controller="Home" asp-action="Menu">Back</a>
